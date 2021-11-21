@@ -1,0 +1,27 @@
+.film {
+	max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+	padding: 0 1rem 5rem 1rem;
+	line-height: 1.3;
+	&__nadpis {
+		margin: 0;
+		padding-top: 2rem;
+		&--obsah {
+			margin: 0;
+			padding-top: 1rem;
+		}
+	}
+	&__detail{
+		&--tema {
+			float: left;
+			clear: left;
+			width: 50px;
+			font-weight: bold;
+		}
+		&--popis {
+			margin: 0 0 0 60px;
+		}
+	}
+}
+

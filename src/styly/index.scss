@@ -1,2 +1,18 @@
 @import 'obecne';
+@import 'film';
+@import 'puvod-dat';
 @import 'komponenty/hlavicka.scss';
+@import 'komponenty/seznam';
+@import 'komponenty/paticka';
+
+.uvod {
+	max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+		line-height: 1.5;
+		padding: 0 1rem 3rem 1rem;
+		&__nadpis {
+			margin: 0;
+			padding-top: 1rem;
+		}
+}

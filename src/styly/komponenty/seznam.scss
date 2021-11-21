@@ -1,0 +1,12 @@
+.seznam {
+    color: #3d5afe;
+    list-style-type: square;
+    padding: 0 1rem;
+    &__odrazka--odkaz {
+        text-decoration: none;
+        color: #3d5afe;
+    }
+    &__odrazka--odkaz:visited {
+        color: #3d5afe;
+    }
+}

@@ -6,5 +6,20 @@ pagination:
   alias: film
 permalink: "/film/{{ film.nazev | slug }}/"
 ---
+<div class="film">
+  <h1 class="film__nadpis">{{ film.nazev }}</h1>
 
-<h2>{{ film.nazev }}</h2>
+  <dl class="film__detail">
+    <dt class="film__detail--tema">Rok:</dt>
+    <dd class="film__detail--popis">{{ film.rok }}</dd>
+    <dt class="film__detail--tema">Země:</dt>
+    <dd class="film__detail--popis">{{ film.zeme | join(', ') }}</dd>
+    <dt class="film__detail--tema">Žánr:</dt>
+    <dd class="film__detail--popis">{{ film.zanr | join(' / ') }}</dd>
+    <dt class="film__detail--tema">Délka:</dt>
+    <dd class="film__detail--popis">{{ film.delka }} min</dd>
+  </dl>
+
+  <h2 class="film__nadpis--obsah">Obsah</h2>
+  <p class="film__obsah">{{ film.obsah.text }}</p>
+</div>
